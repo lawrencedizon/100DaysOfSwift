@@ -21,12 +21,10 @@ class ViewController: UITableViewController {
         
         for item in items{
             if item.hasPrefix("nssl"){
-                // this is a picture to load!
                 pictures.append(item)
             }
         }
-        
-        print(pictures)
+        pictures.sort()
     }
     
 
@@ -41,11 +39,14 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
         
         cell.textLabel?.text = pictures[indexPath.row]
+        cell.textLabel?.font = cell.textLabel?.font.withSize(25)
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.selectedImage = pictures[indexPath.row]
+            vc.selectedPictureNumber = indexPath.row
+            vc.totalPictures = pictures.count
             navigationController?.pushViewController(vc, animated: true)
             
         }
