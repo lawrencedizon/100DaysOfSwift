@@ -17,32 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-zQ-mfr">
-                                <rect key="frame" x="155" y="100" width="104" height="100"/>
+                                <rect key="frame" x="107" y="138" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9gd-P3-J9g"/>
+                                    <constraint firstAttribute="height" constant="100" id="Eb7-lY-y1U"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHb-JU-gUY">
-                                <rect key="frame" x="155" y="360" width="104" height="100"/>
+                                <rect key="frame" x="107" y="392" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ImG-wh-KNZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="Kri-F5-XkL"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="us"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-84-edG">
-                                <rect key="frame" x="155" y="227" width="104" height="100"/>
+                                <rect key="frame" x="107" y="265" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KeR-LP-mXJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="gKE-Q8-U8P"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kkd-84-edG" firstAttribute="top" secondItem="Qcd-zQ-mfr" secondAttribute="bottom" constant="27" id="62I-3G-PN8"/>
-                            <constraint firstItem="Kkd-84-edG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8He-Km-1Lv"/>
-                            <constraint firstItem="Qcd-zQ-mfr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="HyH-pX-MOS"/>
-                            <constraint firstItem="gHb-JU-gUY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="Lfz-ZP-cKl"/>
-                            <constraint firstItem="Kkd-84-edG" firstAttribute="centerX" secondItem="Qcd-zQ-mfr" secondAttribute="centerX" id="Tym-27-2y0"/>
-                            <constraint firstItem="Qcd-zQ-mfr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="WkJ-8z-iLK"/>
-                            <constraint firstItem="gHb-JU-gUY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y55-jv-U9h"/>
-                            <constraint firstItem="Kkd-84-edG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="aAs-AH-LzK"/>
-                            <constraint firstItem="Qcd-zQ-mfr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cy0-b0-qMT"/>
-                            <constraint firstItem="gHb-JU-gUY" firstAttribute="top" secondItem="Kkd-84-edG" secondAttribute="bottom" constant="33" id="iUI-bv-gMn"/>
-                            <constraint firstItem="gHb-JU-gUY" firstAttribute="centerX" secondItem="Kkd-84-edG" secondAttribute="centerX" id="zbb-9W-ioO"/>
+                            <constraint firstItem="Qcd-zQ-mfr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="4Pt-5Z-7G6"/>
+                            <constraint firstItem="gHb-JU-gUY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHE-qo-M2C"/>
+                            <constraint firstItem="gHb-JU-gUY" firstAttribute="top" secondItem="Kkd-84-edG" secondAttribute="bottom" constant="27" id="CsZ-dw-dhj"/>
+                            <constraint firstItem="Qcd-zQ-mfr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XEh-xx-Y6F"/>
+                            <constraint firstItem="Kkd-84-edG" firstAttribute="top" secondItem="Qcd-zQ-mfr" secondAttribute="bottom" constant="27" id="m57-c0-y5U"/>
+                            <constraint firstItem="Kkd-84-edG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zMP-9i-8Q4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3ar-GX-CzD"/>
