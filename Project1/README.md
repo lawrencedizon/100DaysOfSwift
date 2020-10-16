@@ -1,7 +1,9 @@
 # Project 1
 
 ## App Screenshots
-![1.png](/Project1/screenshots/1.png)
-![2.png](/Project1/screenshots/2.png)
-![3.png](/Project1/screenshots/3.png)
-![4.png](/Project1/screenshots/4.png)
+<p align= "center">
+<img src= "/Project1/screenshots/1.png" width = "200">
+<img src= "/Project1/screenshots/2.png" width = "200">
+<img src= "/Project1/screenshots/3.png" width = "200">
+<img src= "/Project1/screenshots/4.png" width = "200">
+</p>
