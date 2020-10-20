@@ -22,15 +22,13 @@ class ViewController: UITableViewController {
                 let path = Bundle.main.resourcePath!
                 let items = try! fm.contentsOfDirectory(atPath: path)
         
-        //Find out this bug
-                
-//        for item in items {
-//
-//            if item.hasSuffix("png"){
-//                print(item)
-//            }
-//
-//        }
+        for item in items {
+
+            if item.hasSuffix("png"){
+                flagNames.append(item)
+            }
+
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,11 +36,16 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "flag", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
         
         cell.textLabel?.text = flagNames[indexPath.row]
         return cell
     }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+    
 
 
 }
