@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
         askQuestion()
-    } 
+        
+    }
     
     func askQuestion(action: UIAlertAction! = nil){
         countries.shuffle()
@@ -71,13 +72,6 @@ class ViewController: UIViewController {
             present(ac, animated: true)
         }
     }
-    
-    
-    
-    
-    
-    
-    
     
 }
 
