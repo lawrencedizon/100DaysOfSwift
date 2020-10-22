@@ -19,9 +19,12 @@ class DetailViewController: UIViewController {
             
         }
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         image.layer.borderWidth = 0.5
-            
-           
+    }
+    
+    @objc func shareTapped(){
+        print("testing shareTapped")
     }
 
 }
