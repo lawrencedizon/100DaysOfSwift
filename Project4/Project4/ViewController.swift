@@ -21,7 +21,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
+         Right bar button will call objc function
+         */
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
+        
+        /*
+         UI Buttons
+         */
         
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         
@@ -30,11 +37,19 @@ class ViewController: UIViewController, WKNavigationDelegate {
         toolbarItems = [spacer, refresh]
         navigationController?.isToolbarHidden = false
         
+        /*
+         Create the URL and load the URLRequest into the Webview.
+         */
+        
         let url = URL(string: "https://hackingwithswift.com")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
+        
     }
     
+    /*
+     Define objc function.
+     */
     @objc func openTapped() {
         let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "apple.com", style: .default, handler: openPage))
