@@ -6,16 +6,25 @@
 //
 
 import UIKit
-
+//
+//MARK: - View Controller
+//
 class ViewController: UITableViewController {
-    
+    //
+    //MARK: - ViewController Variables and Properties
+    //
     var allWords = [String]()
     var usedWords = [String]()
-        
+    
+    
+    //
+    //MARK: - View Controller Event States
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(startGame))
         
         
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: ".txt"){
@@ -31,12 +40,18 @@ class ViewController: UITableViewController {
 
     }
     
-    func startGame(){
+    //
+    // MARK: - View Controller methods
+    //
+    @objc func startGame(){
         title = allWords.randomElement()
         usedWords.removeAll(keepingCapacity: true)
         tableView.reloadData()
     }
     
+    //
+    //MARK: - UITableView Config
+    //
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return usedWords.count
     }
@@ -46,6 +61,10 @@ class ViewController: UITableViewController {
         cell.textLabel?.text = usedWords[indexPath.row]
         return cell
     }
+    
+    //
+    //MARK: - UIAlertController Config
+    //
     
     @objc func promptForAnswer(){
         let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .alert)
@@ -65,38 +84,50 @@ class ViewController: UITableViewController {
     }
     func submit(_ answer: String){
         let lowerAnswer = answer.lowercased()
-        
-        let errorTitle: String
-        let errorMessage: String
         if isPossible(word: lowerAnswer){
-            if isOriginal(word: lowerAnswer){
-                if isReal(word: lowerAnswer){
+            if isOriginal(word: lowerAnswer) && title?.lowercased() != lowerAnswer{
+                if isReal(word: lowerAnswer) && isValidLengthCheck(word: lowerAnswer){
                     usedWords.insert(answer, at: 0)
                     
                     let indexPath = IndexPath(row: 0, section: 0)
                     tableView.insertRows(at: [indexPath], with: .automatic)
-                    
                     return
-                 
-                } else {
-                    errorTitle = "Word not recognized"
-                    errorMessage = "You can't just make them up, you know!"
+                }else {
+                    if(answer.count) <= 3 {
+                        showErrorMessage(errorTitle: "Word is too short", errorMessage: "Words must be 3 or more characters long")
+                    }else{
+                        showErrorMessage(errorTitle: "Word not recognized", errorMessage: "You can't just make them up, you know!")
+                    }
                 }
             }else {
-                errorTitle = "Word already used"
-                errorMessage = "Be more original"
+                if title?.lowercased() == lowerAnswer{
+                    showErrorMessage(errorTitle: "Start word is not allowed", errorMessage: "Please try a valid word")
+                }else{
+                    showErrorMessage(errorTitle: "Word already used", errorMessage: "Be more original")
+                }
+                
             }
         }else {
             guard let title = title else { return }
-            errorTitle = "Word not possible"
-            errorMessage = "You can't spell that word from \(title.lowercased())"
+            showErrorMessage(errorTitle: "Word not possible", errorMessage: "You can't spell that word from \(title.lowercased())")
         }
         
+    }
+    
+    func showErrorMessage(errorTitle: String, errorMessage: String){
         let ac = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert   )
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
-        
     }
+    
+    //
+    //MARK: - Game word checking methods
+    //
+    
+    func isValidLengthCheck(word: String) -> Bool{
+        return word.count > 3
+    }
+    
 
     func isPossible(word: String) -> Bool {
         guard var tempWord = title?.lowercased() else { return false }
