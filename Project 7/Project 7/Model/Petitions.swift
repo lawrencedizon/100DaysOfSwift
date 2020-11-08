@@ -5,4 +5,6 @@
 //  Created by Lawrence Dizon on 11/7/20.
 //
 
-import Foundation
+struct Petitions: Codable {
+    var results: [Petition]
+}
