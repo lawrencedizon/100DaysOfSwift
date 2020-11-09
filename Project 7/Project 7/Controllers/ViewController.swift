@@ -87,8 +87,8 @@ class ViewController: UITableViewController {
     }
     
     @objc func showCredits(){
-        let ac = UIAlertController(title: "Credits", message: "The data comes from 'We The People API of the Whitehouse'", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+        let ac = UIAlertController(title: "Credits", message: "We The People API of the Whitehouse", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .cancel))
         
         present(ac, animated: true)
     }
