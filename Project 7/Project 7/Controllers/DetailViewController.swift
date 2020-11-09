@@ -34,6 +34,9 @@ class DetailViewController: UIViewController {
         let html = """
         <html>
         <head>
+        <b>\(detailItem.title)</b>
+        <br>
+        <br>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style> body { font-size: 150%; ) </style>
         </head>
