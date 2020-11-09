@@ -22,6 +22,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(showCredits))
+        
         let urlString: String
         if navigationController?.tabBarItem.tag == 0 {
             urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
@@ -82,6 +84,13 @@ class ViewController: UITableViewController {
         let vc = DetailViewController()
         vc.detailItem = petitions[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func showCredits(){
+        let ac = UIAlertController(title: "Credits", message: "The data comes from 'We The People API of the Whitehouse'", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+        
+        present(ac, animated: true)
     }
 }
 
