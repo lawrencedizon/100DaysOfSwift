@@ -8,11 +8,19 @@
 import UIKit
 import WebKit
 
+//
+//MARK:- DetailViewController
+//
 class DetailViewController: UIViewController {
-
+    //
+    //MARK:- DetailViewController Properties
+    //
     var webView: WKWebView!
     var detailItem: Petition?
     
+    //
+    //MARK:-DetailViewController States
+    //
     override func loadView(){
         webView = WKWebView()
         view = webView
@@ -33,13 +41,7 @@ class DetailViewController: UIViewController {
         </body>
         </html>
         """
-        
         webView.loadHTMLString(html, baseURL: nil)
         
-
     }
-    
-
-
-
 }
