@@ -145,6 +145,9 @@ class ViewController: UIViewController {
                 let letterButton = UIButton(type: .system)
                 letterButton.titleLabel?.font = UIFont.systemFont(ofSize: 36)
                 letterButton.setTitle("WWW", for: .normal)
+                letterButton.layer.borderWidth = 1
+                letterButton.layer.borderColor =
+                    UIColor.gray.cgColor
                 letterButton.addTarget(self, action: #selector(letterTapped), for: .touchUpInside)
                 
                 let frame = CGRect(x: column * width, y: row * height, width: width, height: height)
@@ -183,14 +186,22 @@ class ViewController: UIViewController {
         splitAnswers?[solutionPosition] = answerText
             answersLabel.text = splitAnswers?.joined(separator: "\n")
             currentAnswer.text = ""
+            
             score += 1
             
-            if score % 7 == 0 {
+            if score % 7 == 2 {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 
                 present(ac, animated: true)
             }
+        }else{
+            if score > 0 {
+                score -= 1
+            }
+            let ac = UIAlertController(title: "Invalid answer", message: "Please try again.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
         }
     }
     
