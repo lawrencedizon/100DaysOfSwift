@@ -29,6 +29,11 @@ class ViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "info.circle"), style: .plain, target: self, action: #selector(showCredits))
         
+        performSelector(inBackground: #selector(fetchJson), with: nil )
+    }
+        
+    @objc func fetchJson(){
+        
         let urlString: String
         if navigationController?.tabBarItem.tag == 0 {
             urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
@@ -42,8 +47,11 @@ class ViewController: UITableViewController {
                 return
             }
             
+        
+            
         }
-        showError()
+        performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
+     
     }
    
     
@@ -57,17 +65,22 @@ class ViewController: UITableViewController {
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json){
             petitions = jsonPetitions.results
             filteredPetitions = jsonPetitions.results
-            tableView.reloadData()
+            
+            tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        }
+        else{
+            performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
         }
     }
     //
     // MARK:- Parsor Error Message
     //
-    func showError(){
+    @objc func showError(){
         let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Ok", style: .default))
         present(ac, animated: true)
     }
+        
     
     //
     // MARK:- TableView Properties
