@@ -189,7 +189,7 @@ class ViewController: UIViewController {
             
             score += 1
             
-            if score % 7 == 2 {
+            if score == 5  {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 
