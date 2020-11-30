@@ -1,4 +1,4 @@
-# Project 3
+# Project 3 Social Media
 
 ## App Screenshots
 <p align= "center">
