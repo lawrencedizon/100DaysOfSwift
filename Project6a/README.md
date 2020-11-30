@@ -1,4 +1,4 @@
-# Project 2
+# Project 6a AutoLayout
 
 ## App Screenshots
 <p align = "center">
