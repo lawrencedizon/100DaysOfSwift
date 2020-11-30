@@ -1,4 +1,4 @@
-# Project 7 White House Petitions
+# Project 8 Swifty Words
 <p>
 
 ## App Screenshots
