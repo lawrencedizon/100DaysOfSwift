@@ -1,4 +1,4 @@
-# Project 4
+# Project 4 Easy Browser
 
 ## App Screenshots
 <p align= "center">
