@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TJY-mW-L3r">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TJY-mW-L3r">
                             <size key="itemSize" width="140" height="180"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -45,8 +45,8 @@
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="imageView" destination="7H3-Hn-7hP" id="eKJ-BP-TfO"/>
-                                    <outlet property="name" destination="L8e-Ht-qfq" id="M73-7L-cJX"/>
+                                    <outlet property="imageView" destination="7H3-Hn-7hP" id="hPD-Rs-1e0"/>
+                                    <outlet property="name" destination="L8e-Ht-qfq" id="eDA-Tg-cJg"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
