@@ -1,4 +1,4 @@
-# Project 2
+# Project 2 Guess the Flag
 
 ## App Screenshots
 <p align = "center">
