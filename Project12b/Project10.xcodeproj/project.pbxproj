@@ -75,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				90E47107256362A1007892AE /* ViewController.swift */,
-				90D343DC2575852400C1D98A /* Person.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -91,6 +90,7 @@
 		90E4711A256362DB007892AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				90D343DC2575852400C1D98A /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
