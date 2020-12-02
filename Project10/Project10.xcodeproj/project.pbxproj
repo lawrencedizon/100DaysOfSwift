@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90D343D9257580FE00C1D98A /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D343D8257580FE00C1D98A /* PersonCell.swift */; };
+		90D343DD2575852400C1D98A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D343DC2575852400C1D98A /* Person.swift */; };
 		90E47104256362A1007892AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E47103256362A1007892AE /* AppDelegate.swift */; };
 		90E47106256362A1007892AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E47105256362A1007892AE /* SceneDelegate.swift */; };
 		90E47108256362A1007892AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E47107256362A1007892AE /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90D343D8257580FE00C1D98A /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonCell.swift; path = Project10/View/PersonCell.swift; sourceTree = SOURCE_ROOT; };
+		90D343DC2575852400C1D98A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Project10/Model/Person.swift; sourceTree = SOURCE_ROOT; };
 		90E47100256362A1007892AE /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E47103256362A1007892AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90E47105256362A1007892AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				90E47107256362A1007892AE /* ViewController.swift */,
+				90D343DC2575852400C1D98A /* Person.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 		90E47119256362C6007892AE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90D343D8257580FE00C1D98A /* PersonCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D343DD2575852400C1D98A /* Person.swift in Sources */,
 				90E47108256362A1007892AE /* ViewController.swift in Sources */,
 				90E47104256362A1007892AE /* AppDelegate.swift in Sources */,
+				90D343D9257580FE00C1D98A /* PersonCell.swift in Sources */,
 				90E47106256362A1007892AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
