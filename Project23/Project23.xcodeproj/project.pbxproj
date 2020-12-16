@@ -14,6 +14,9 @@
 		90AEF65C25897EE600500686 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEF65B25897EE600500686 /* GameViewController.swift */; };
 		90AEF65F25897EE600500686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF65D25897EE600500686 /* Main.storyboard */; };
 		90AEF66125897EE700500686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66025897EE700500686 /* Assets.xcassets */; };
+		90AEF66D25898C7300500686 /* swoosh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66A25898C7300500686 /* swoosh2.caf */; };
+		90AEF66E25898C7300500686 /* swoosh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66B25898C7300500686 /* swoosh1.caf */; };
+		90AEF66F25898C7300500686 /* swoosh3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66C25898C7300500686 /* swoosh3.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		90AEF65E25897EE600500686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90AEF66025897EE700500686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90AEF66225897EE700500686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90AEF66A25898C7300500686 /* swoosh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh2.caf; sourceTree = "<group>"; };
+		90AEF66B25898C7300500686 /* swoosh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh1.caf; sourceTree = "<group>"; };
+		90AEF66C25898C7300500686 /* swoosh3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh3.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				90AEF65D25897EE600500686 /* Main.storyboard */,
 				90AEF66025897EE700500686 /* Assets.xcassets */,
 				90AEF66225897EE700500686 /* Info.plist */,
+				90AEF66B25898C7300500686 /* swoosh1.caf */,
+				90AEF66A25898C7300500686 /* swoosh2.caf */,
+				90AEF66C25898C7300500686 /* swoosh3.caf */,
 			);
 			path = Project23;
 			sourceTree = "<group>";
@@ -127,10 +136,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AEF66D25898C7300500686 /* swoosh2.caf in Resources */,
 				90AEF65F25897EE600500686 /* Main.storyboard in Resources */,
 				90AEF65625897EE600500686 /* GameScene.sks in Resources */,
 				90AEF66125897EE700500686 /* Assets.xcassets in Resources */,
 				90AEF65825897EE600500686 /* Actions.sks in Resources */,
+				90AEF66E25898C7300500686 /* swoosh1.caf in Resources */,
+				90AEF66F25898C7300500686 /* swoosh3.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
