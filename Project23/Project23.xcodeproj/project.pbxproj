@@ -17,6 +17,14 @@
 		90AEF66D25898C7300500686 /* swoosh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66A25898C7300500686 /* swoosh2.caf */; };
 		90AEF66E25898C7300500686 /* swoosh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66B25898C7300500686 /* swoosh1.caf */; };
 		90AEF66F25898C7300500686 /* swoosh3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF66C25898C7300500686 /* swoosh3.caf */; };
+		90AEF6722589953700500686 /* explosion.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF6712589953700500686 /* explosion.caf */; };
+		90AEF6752589953F00500686 /* launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF6742589953F00500686 /* launch.caf */; };
+		90AEF67C2589965F00500686 /* sliceFuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF6782589965F00500686 /* sliceFuse.sks */; };
+		90AEF67D2589965F00500686 /* sliceHitEnemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF6792589965F00500686 /* sliceHitEnemy.sks */; };
+		90AEF67E2589965F00500686 /* sliceHitBomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF67A2589965F00500686 /* sliceHitBomb.sks */; };
+		90AEF67F2589965F00500686 /* sliceBombFuse.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF67B2589965F00500686 /* sliceBombFuse.caf */; };
+		90AEF6832589968500500686 /* wrong.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF6812589968500500686 /* wrong.caf */; };
+		90AEF6842589968500500686 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90AEF6822589968500500686 /* whack.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		90AEF66A25898C7300500686 /* swoosh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh2.caf; sourceTree = "<group>"; };
 		90AEF66B25898C7300500686 /* swoosh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh1.caf; sourceTree = "<group>"; };
 		90AEF66C25898C7300500686 /* swoosh3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh3.caf; sourceTree = "<group>"; };
+		90AEF6712589953700500686 /* explosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.caf; sourceTree = "<group>"; };
+		90AEF6742589953F00500686 /* launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = launch.caf; sourceTree = "<group>"; };
+		90AEF6782589965F00500686 /* sliceFuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceFuse.sks; sourceTree = "<group>"; };
+		90AEF6792589965F00500686 /* sliceHitEnemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitEnemy.sks; sourceTree = "<group>"; };
+		90AEF67A2589965F00500686 /* sliceHitBomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitBomb.sks; sourceTree = "<group>"; };
+		90AEF67B2589965F00500686 /* sliceBombFuse.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sliceBombFuse.caf; sourceTree = "<group>"; };
+		90AEF6812589968500500686 /* wrong.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.caf; sourceTree = "<group>"; };
+		90AEF6822589968500500686 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,14 @@
 				90AEF66B25898C7300500686 /* swoosh1.caf */,
 				90AEF66A25898C7300500686 /* swoosh2.caf */,
 				90AEF66C25898C7300500686 /* swoosh3.caf */,
+				90AEF6712589953700500686 /* explosion.caf */,
+				90AEF6742589953F00500686 /* launch.caf */,
+				90AEF67B2589965F00500686 /* sliceBombFuse.caf */,
+				90AEF6782589965F00500686 /* sliceFuse.sks */,
+				90AEF67A2589965F00500686 /* sliceHitBomb.sks */,
+				90AEF6792589965F00500686 /* sliceHitEnemy.sks */,
+				90AEF6822589968500500686 /* whack.caf */,
+				90AEF6812589968500500686 /* wrong.caf */,
 			);
 			path = Project23;
 			sourceTree = "<group>";
@@ -136,12 +160,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AEF6832589968500500686 /* wrong.caf in Resources */,
+				90AEF67E2589965F00500686 /* sliceHitBomb.sks in Resources */,
 				90AEF66D25898C7300500686 /* swoosh2.caf in Resources */,
 				90AEF65F25897EE600500686 /* Main.storyboard in Resources */,
 				90AEF65625897EE600500686 /* GameScene.sks in Resources */,
+				90AEF67F2589965F00500686 /* sliceBombFuse.caf in Resources */,
 				90AEF66125897EE700500686 /* Assets.xcassets in Resources */,
 				90AEF65825897EE600500686 /* Actions.sks in Resources */,
 				90AEF66E25898C7300500686 /* swoosh1.caf in Resources */,
+				90AEF6722589953700500686 /* explosion.caf in Resources */,
+				90AEF67C2589965F00500686 /* sliceFuse.sks in Resources */,
+				90AEF6842589968500500686 /* whack.caf in Resources */,
+				90AEF67D2589965F00500686 /* sliceHitEnemy.sks in Resources */,
+				90AEF6752589953F00500686 /* launch.caf in Resources */,
 				90AEF66F25898C7300500686 /* swoosh3.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
