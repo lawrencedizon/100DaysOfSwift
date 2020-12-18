@@ -30,6 +30,11 @@ class ViewController: UIViewController {
         switch currentDrawType {
         case 0:
             drawRectange()
+        case 1:
+            drawCircle()
+        case 2:
+            drawCheckerBoard()
+            
         default:
             break
         }
@@ -40,7 +45,7 @@ class ViewController: UIViewController {
         
         let image = renderer.image { ctx in
             //awesome drawing code here
-            let rectangle = CGRect(x: 0, y:0 , width: 512, height: 512)
+            let rectangle = CGRect(x: 0, y:0 , width: 512, height: 512).insetBy(dx: 5, dy: 5)
             
             ctx.cgContext.setFillColor(UIColor.red.cgColor)
             ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
@@ -51,6 +56,46 @@ class ViewController: UIViewController {
         }
         
         imageView.image = image
+    }
+    
+    func drawCircle(){
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let image = renderer.image { ctx in
+            //awesome drawing code here
+            let rectangle = CGRect(x: 0, y:0 , width: 512, height: 512).insetBy(dx: 5, dy: 5)
+            
+            ctx.cgContext.setFillColor(UIColor.red.cgColor)
+            ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
+            ctx.cgContext.setLineWidth(10)
+            
+            ctx.cgContext.addEllipse(in: rectangle)
+            ctx.cgContext.drawPath(using: .fillStroke)
+        }
+        
+        imageView.image = image
+    }
+    
+    func drawCheckerBoard(){
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
+        
+        let image = renderer.image { ctx in
+            //awesome drawing code here
+            ctx.cgContext.setFillColor(UIColor.black.cgColor)
+            
+            for row in 0..<8{
+                for col in 0..<8 {
+                    if (row + col).isMultiple(of: 2) {
+                        ctx.cgContext.fill(CGRect(x: col * 64, y: row * 64, width: 64, height: 64))
+                        
+                    }
+                }
+            }
+            
+        }
+        
+        imageView.image = image
+        
     }
     
 }
