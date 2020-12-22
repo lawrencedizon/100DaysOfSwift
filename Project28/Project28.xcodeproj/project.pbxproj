@@ -13,6 +13,8 @@
 		9002F52A2590716C0053C557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9002F5282590716C0053C557 /* Main.storyboard */; };
 		9002F52C2590716D0053C557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9002F52B2590716D0053C557 /* Assets.xcassets */; };
 		9002F52F2590716D0053C557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9002F52D2590716D0053C557 /* LaunchScreen.storyboard */; };
+		909D0F122591B20800C76E17 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D0F112591B20800C76E17 /* KeychainWrapper.swift */; };
+		909D0F152591B21000C76E17 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D0F142591B21000C76E17 /* KeychainItemAccessibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9002F52B2590716D0053C557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9002F52E2590716D0053C557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9002F5302590716D0053C557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		909D0F112591B20800C76E17 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		909D0F142591B21000C76E17 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9002F52B2590716D0053C557 /* Assets.xcassets */,
 				9002F52D2590716D0053C557 /* LaunchScreen.storyboard */,
 				9002F5302590716D0053C557 /* Info.plist */,
+				909D0F142591B21000C76E17 /* KeychainItemAccessibility.swift */,
+				909D0F112591B20800C76E17 /* KeychainWrapper.swift */,
 			);
 			path = Project28;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9002F5272590716C0053C557 /* ViewController.swift in Sources */,
+				909D0F122591B20800C76E17 /* KeychainWrapper.swift in Sources */,
 				9002F5232590716C0053C557 /* AppDelegate.swift in Sources */,
+				909D0F152591B21000C76E17 /* KeychainItemAccessibility.swift in Sources */,
 				9002F5252590716C0053C557 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
