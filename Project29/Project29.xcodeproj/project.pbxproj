@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		909425C725943BF5009D292C /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909425C625943BF5009D292C /* BuildingNode.swift */; };
+		909425CB25946962009D292C /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = 909425C925946962009D292C /* hitBuilding.sks */; };
+		909425CC25946962009D292C /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 909425CA25946962009D292C /* hitPlayer.sks */; };
 		909D0F2C259311D400C76E17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D0F2B259311D400C76E17 /* AppDelegate.swift */; };
 		909D0F2E259311D400C76E17 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 909D0F2D259311D400C76E17 /* GameScene.sks */; };
 		909D0F32259311D400C76E17 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D0F31259311D400C76E17 /* GameScene.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		909425C625943BF5009D292C /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
+		909425C925946962009D292C /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
+		909425CA25946962009D292C /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
 		909D0F28259311D400C76E17 /* Project29.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project29.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909D0F2B259311D400C76E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		909D0F2D259311D400C76E17 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				909D0F35259311D400C76E17 /* Main.storyboard */,
 				909D0F38259311D500C76E17 /* Assets.xcassets */,
 				909D0F3A259311D500C76E17 /* Info.plist */,
+				909425C925946962009D292C /* hitBuilding.sks */,
+				909425CA25946962009D292C /* hitPlayer.sks */,
 			);
 			path = Project29;
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				909D0F37259311D400C76E17 /* Main.storyboard in Resources */,
+				909425CB25946962009D292C /* hitBuilding.sks in Resources */,
+				909425CC25946962009D292C /* hitPlayer.sks in Resources */,
 				909D0F2E259311D400C76E17 /* GameScene.sks in Resources */,
 				909D0F39259311D500C76E17 /* Assets.xcassets in Resources */,
 			);
@@ -212,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -267,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
