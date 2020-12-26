@@ -23,8 +23,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        angleChanged(angleSlider)
-        velocityChanged(velocitySlider)
+       
 
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -44,6 +43,9 @@ class GameViewController: UIViewController {
             view.showsFPS = true
             view.showsNodeCount = true
         }
+        
+        angleChanged(self)
+        velocityChanged(self)
     }
 
     override var shouldAutorotate: Bool {
@@ -62,14 +64,16 @@ class GameViewController: UIViewController {
         return true
     }
 
-    @IBAction func angleChanged(_ sender: AnyObject) {
+   
+    @IBAction func angleChanged(_ sender: Any) {
         angleLabel.text = "Angle: \(Int(angleSlider.value))°"
     }
-
-    @IBAction func velocityChanged(_ sender: AnyObject) {
+    
+   
+    @IBAction func velocityChanged(_ sender: Any) {
         velocityLabel.text = "Velocity: \(Int(velocitySlider.value))"
     }
-
+    
     @IBAction func launch(_ sender: AnyObject) {
         angleSlider.isHidden = true
         angleLabel.isHidden = true
@@ -97,4 +101,6 @@ class GameViewController: UIViewController {
 
         launchButton.isHidden = false
     }
+    
+    
 }
